@@ -73,7 +73,7 @@ The learner first verified:
 - Git: `git version 2.50.1 (Apple Git-155)`.
 - `python3 hello.py` printed the expected two lines.
 
-The learner then installed/upgraded Python and reported:
+The learner then upgraded Python and reported:
 
 - `python3.14 --version` → `Python 3.14.10`
 - `python3 --version` → `Python 3.14.10`
@@ -82,7 +82,12 @@ The learner then installed/upgraded Python and reported:
   2. `/usr/local/bin/python3`
   3. `/usr/bin/python3`
 
-This indicates that the project's virtual environment (`.venv`) is first in the shell's Python 3 command lookup order. Keep using the project virtual environment for this course.
+The learner activated the project virtual environment and confirmed:
+
+- `python --version` → `Python 3.14.10`
+- `sys.executable` → `/Users/kpc/Ai/projects/kpc/python-learning/.venv/bin/python`
+
+This confirms that the active Python interpreter is the project's `.venv`. Keep using this environment for the course.
 
 ## 8. Activate the project virtual environment
 
@@ -99,8 +104,6 @@ python --version
 python -c "import sys; print(sys.executable)"
 ```
 
-The version should be Python 3.14.10, and the executable path should point inside this project's `.venv` directory.
-
 To leave the virtual environment:
 
 ```bash
@@ -112,8 +115,10 @@ Do not delete the old system Python at `/usr/bin/python3`; macOS may rely on its
 ## Setup checklist
 
 - [x] Python 3.14.10 is available through `python3.14`.
-- [x] `python3` reports Python 3.14.10 in the learner's current terminal.
+- [x] `python3` reports Python 3.14.10 in the learner's terminal.
 - [x] Project `.venv/bin/python3` appears first in `which -a python3`.
+- [x] Active virtual environment reports Python 3.14.10.
+- [x] Active interpreter path points inside the project `.venv`.
 - [x] Git is available (version 2.50.1).
 - [x] `hello.py` ran successfully before the Python upgrade.
 - [ ] Re-run `hello.py` with the active Python 3.14 virtual environment.
