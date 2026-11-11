@@ -2,7 +2,7 @@
 
 This guide prepares Visual Studio Code and Python 3 for the Python Learning course. The steps are written for macOS, including Intel-based Mac computers.
 
-## 1. Check whether Python 3 is already installed
+## 1. Check Python
 
 Open Terminal and run:
 
@@ -65,28 +65,61 @@ git --version
 
 Git configuration and daily Git commands will be covered later.
 
-## Verified setup result
+## Verified setup results
 
-The learner reported these successful checks:
+The learner first verified:
 
-- Python: `Python 3.9.6`
-- Git: `git version 2.50.1 (Apple Git-155)`
-- `python3 hello.py` successfully printed:
-  - `Hello, Python!`
-  - `My Python environment is ready.`
+- Python 3.9.6 was installed.
+- Git: `git version 2.50.1 (Apple Git-155)`.
+- `python3 hello.py` printed the expected two lines.
 
-**Version note:** Python 3.9 reached end of life in October 2025 and no longer receives upstream security updates. It is sufficient for introductory exercises, but plan to install a supported release such as Python 3.12 or 3.13 before using newer libraries and larger projects.
+The learner then installed/upgraded Python and reported:
+
+- `python3.14 --version` → `Python 3.14.10`
+- `python3 --version` → `Python 3.14.10`
+- `which -a python3` listed these paths in resolution order:
+  1. `/Users/kpc/Ai/projects/kpc/python-learning/.venv/bin/python3`
+  2. `/usr/local/bin/python3`
+  3. `/usr/bin/python3`
+
+This indicates that the project's virtual environment (`.venv`) is first in the shell's Python 3 command lookup order. Keep using the project virtual environment for this course.
+
+## 8. Activate the project virtual environment
+
+From the `python-learning` project directory, activate the environment when opening a new terminal:
+
+```bash
+source .venv/bin/activate
+```
+
+When active, the terminal prompt usually shows `(.venv)`. Check:
+
+```bash
+python --version
+python -c "import sys; print(sys.executable)"
+```
+
+The version should be Python 3.14.10, and the executable path should point inside this project's `.venv` directory.
+
+To leave the virtual environment:
+
+```bash
+deactivate
+```
+
+Do not delete the old system Python at `/usr/bin/python3`; macOS may rely on its own tools.
 
 ## Setup checklist
 
-- [x] Python 3 version displays in Terminal.
-- [x] VS Code integrated Terminal successfully ran the program.
+- [x] Python 3.14.10 is available through `python3.14`.
+- [x] `python3` reports Python 3.14.10 in the learner's current terminal.
+- [x] Project `.venv/bin/python3` appears first in `which -a python3`.
+- [x] Git is available (version 2.50.1).
+- [x] `hello.py` ran successfully before the Python upgrade.
+- [ ] Re-run `hello.py` with the active Python 3.14 virtual environment.
 - [ ] Microsoft Python extension is installed (not yet confirmed).
 - [ ] Pylance is installed if recommended (not yet confirmed).
-- [x] `hello.py` is created and saved.
-- [x] `python3 hello.py` runs successfully.
-- [x] Git is available in Terminal.
 
 ## Troubleshooting
 
-If something does not work, share the exact command and complete error message. Avoid installing multiple Python versions before checking the issue.
+If something does not work, share the exact command and complete error message. Avoid deleting macOS's system Python or changing symlinks manually.
