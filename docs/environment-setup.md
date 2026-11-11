@@ -87,7 +87,14 @@ The learner activated the project virtual environment and confirmed:
 - `python --version` → `Python 3.14.10`
 - `sys.executable` → `/Users/kpc/Ai/projects/kpc/python-learning/.venv/bin/python`
 
-This confirms that the active Python interpreter is the project's `.venv`. Keep using this environment for the course.
+The learner then ran `python hello.py` using the active virtual environment and confirmed the output:
+
+```text
+Hello, Python!
+My Python environment is ready.
+```
+
+This confirms that the active interpreter and test program both work. Keep using this environment for the course.
 
 ## 8. Activate the project virtual environment
 
@@ -121,7 +128,7 @@ Do not delete the old system Python at `/usr/bin/python3`; macOS may rely on its
 - [x] Active interpreter path points inside the project `.venv`.
 - [x] Git is available (version 2.50.1).
 - [x] `hello.py` ran successfully before the Python upgrade.
-- [ ] Re-run `hello.py` with the active Python 3.14 virtual environment.
+- [x] `hello.py` ran successfully with the active Python 3.14 virtual environment.
 - [ ] Microsoft Python extension is installed (not yet confirmed).
 - [ ] Pylance is installed if recommended (not yet confirmed).
 
