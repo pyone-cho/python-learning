@@ -14,6 +14,10 @@ The full course plan, estimated timeline, daily lesson format, project path, env
 
 The roadmap assumes 30–45 minutes of study per day. It estimates 2–4 weeks for fundamentals, 1–2 months to write programs independently, 2–3 months to build small projects, and 3–6 months to apply Python to practical tasks. Actual progress depends on practice and pace.
 
+## Development environment
+
+- [Python + VS Code Setup Guide for macOS](docs/environment-setup.md)
+
 ## Repository structure
 
 ```text
@@ -22,7 +26,8 @@ python-learning/
 ├── .gitignore
 ├── requirements.txt
 ├── docs/
-│   └── learning-roadmap.md
+│   ├── learning-roadmap.md
+│   └── environment-setup.md
 ├── lessons/
 │   ├── day-01/
 │   ├── day-02/
@@ -43,6 +48,7 @@ python-learning/
 
 ## Progress
 
+- [ ] Environment setup
 - [ ] Day 01 — Python Introduction & First Program
 - [ ] Day 02 — Variables & Data Types
 - [ ] Day 03 — Operators & Calculations
@@ -50,10 +56,6 @@ python-learning/
 - [ ] Day 05 — If / Else
 - [ ] Day 06 — Loops
 - [ ] Day 07 — Mini Project & Review
-
-## Environment
-
-Use Python 3 and Visual Studio Code. Use the terminal to run programs and Git to track learning progress.
 
 ## Repository guidelines
 
