@@ -1,31 +1,36 @@
 # Day 01 Challenge — Introduce Yourself
 
-## Submitted output
+## Submitted source code
 
-The learner ran `python introduction.py` and shared this output:
+File: [day-01-introduction.py](day-01-introduction.py)
+
+```python
+print("My name is Alex.")
+print("I live in Yangon.")
+print("I want to learn Python to build useful applications.")
+```
+
+## Program output
 
 ```text
 My name is Alex.
-I am from Myanmar.
+I live in Yangon.
 I want to learn Python to build useful applications.
 ```
 
 ## Review
 
-**What is correct**
-- The output contains three separate lines.
-- It communicates a name, a place, and a reason for learning Python.
-- The result is consistent with using `print()` for each line.
+**Status: Passed**
 
-**One improvement**
-- The challenge asked for the learner's **city**. "Myanmar" is a country, so replace that line with the city name to meet the requirement exactly. For example: `I live in [your city].`
+- Uses `print()` correctly to display output.
+- Uses quotation marks correctly for string values.
+- Prints three separate lines using three `print()` statements.
+- Includes a city, as requested by the challenge.
 
-## Review status
+**Learning point:** With one `print()` statement per output line, three separate lines require three `print()` calls.
 
-- Output review: passed with one small requirement to adjust.
-- Source code review: pending; the learner shared terminal output, not the contents of `introduction.py`.
-- Day 01 challenge: not yet marked complete.
+## Day 01 result
 
-## Next step
-
-Share the contents of `introduction.py` after changing the place line to your city. Then the code itself can be reviewed.
+- Introduction program: completed.
+- Code review: passed.
+- Day 01 challenge: completed.
