@@ -1,50 +1,45 @@
 # Day 02 Challenge — My Profile Program
 
-## Submitted code
+## Submitted solution
 
 File: [day-02-profile.py](day-02-profile.py)
 
-```python
-name = "Pyone Cho"
-age = 40
-city = "Yangon"
-height = 5.7
-is_learning_python = True
+The learner first submitted a program that declared five variables and printed each value and its type. After feedback, the learner ran the formatted profile output below.
 
-print(name)
-print(age)
-print(city)
-print(height)
-print(is_learning_python)
+## Verified program output
 
-print(type(name))
-print(type(age))
-print(type(city))
-print(type(height))
-print(type(is_learning_python))
+```text
+===== MY PROFILE =====
+Name: Pyone Cho
+Age: 40
+City: Yangon
+Height: 5.7
+Learning Python: True
+======================
+
+===== DATA TYPES =====
+<class 'str'>
+<class 'int'>
+<class 'str'>
+<class 'float'>
+<class 'bool'>
 ```
 
 ## Review
 
-**What is correct**
-- Declares all five requested variables.
-- Uses appropriate values and data types: `str`, `int`, `str`, `float`, and `bool`.
-- Prints each variable value.
-- Uses `type()` to inspect all five variables.
-- The code is syntactically valid.
+**Passed**
+- Profile output includes all five requested fields.
+- Values are displayed with clear labels and a heading/footer.
+- Data types match the values: `str`, `int`, `str`, `float`, and `bool`.
+- The learner successfully used `type()` to inspect each variable.
 
-**Improvements to make**
-1. Use lowercase `snake_case` variable names (for example, `name`, `age`, `city`, `height`) as the conventional Python style.
-2. Add descriptive labels and the requested profile heading/footer to make the output easier to read.
-3. The submitted code does not yet show the exact formatted profile output from the challenge.
+**Learning point**
+- Python variable names are case-sensitive. Lowercase `snake_case` names such as `name`, `age`, and `is_learning_python` are the recommended convention.
 
-## Review status
+## Day 02 result
 
-- Variable and data-type exercise: passed.
-- `type()` practice: passed.
-- Formatting challenge: needs one improvement.
-- Day 02: in progress; not yet marked complete.
-
-## Suggested next step
-
-Update the program to print the profile with labels, then run it again and share the updated code and output.
+- Variables: completed.
+- Data types: completed.
+- `type()` practice: completed.
+- Formatted profile output: completed.
+- Day 02 challenge: completed.
