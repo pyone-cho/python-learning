@@ -1,26 +1,18 @@
 # Python Learning
 
-A practical, step-by-step Python learning journey built around short lessons, coding challenges, and small projects.
+A practical, step-by-step Python learning journey built around short lessons, daily coding challenges, and small projects.
 
 ## Learning approach
 
-- Learn one concept at a time.
-- Type and run every example yourself.
-- Complete the challenge before looking at a solution.
-- Keep notes about mistakes and useful ideas.
-- Build small projects as your skills grow.
+Learn by building, experimenting, solving puzzles, and reviewing your own code. The recommended style is **Mixed Learning**: lessons + games/challenges + projects.
 
-## Roadmap
+## Learning roadmap
 
-| Stage | Topics | Outcome |
-|---|---|---|
-| 1. Foundations | Setup, print, variables, data types, operators, input/output | Write simple programs |
-| 2. Logic | Conditions, loops, strings, lists, tuples, dictionaries, sets | Solve small problems |
-| 3. Reusable code | Functions, modules, packages, exceptions | Organize programs |
-| 4. Working with data | Files, JSON, CSV, SQLite | Store and retrieve data |
-| 5. OOP | Classes, objects, methods, inheritance | Model real-world concepts |
-| 6. Practical development | APIs, automation, testing, Git | Build useful tools |
-| 7. Projects | Expense tracker, inventory app, hotel workflow prototype | Apply the concepts |
+The full course plan, estimated timeline, daily lesson format, project path, environment, and learning-style options are documented here:
+
+- [Python Learning Roadmap](docs/learning-roadmap.md)
+
+The roadmap assumes 30–45 minutes of study per day. It estimates 2–4 weeks for fundamentals, 1–2 months to write programs independently, 2–3 months to build small projects, and 3–6 months to apply Python to practical tasks. Actual progress depends on practice and pace.
 
 ## Repository structure
 
@@ -29,38 +21,44 @@ python-learning/
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
+├── docs/
+│   └── learning-roadmap.md
 ├── lessons/
 │   ├── day-01/
 │   ├── day-02/
+│   ├── day-03/
 │   └── ...
 ├── challenges/
 ├── mini-projects/
 └── notes/
 ```
 
-## Suggested study routine
+## Daily lesson format
 
-Aim for 30–45 minutes per session:
-
-1. 5–10 minutes: learn the concept.
-2. 10 minutes: type and run examples.
-3. 10 minutes: solve a challenge.
-4. 10–15 minutes: improve a small program and write a short note.
+1. Learn — 5–10 minutes
+2. Code — 10 minutes
+3. Challenge — 10 minutes
+4. Mini Project — 10 minutes
+5. Review & XP — review mistakes and track progress
 
 ## Progress
 
-- [ ] Day 01 — Introduction and first program
-- [ ] Day 02 — Variables and data types
-- [ ] Day 03 — Operators and calculations
-- [ ] Day 04 — User input and output
-- [ ] Day 05 — Conditions
+- [ ] Day 01 — Python Introduction & First Program
+- [ ] Day 02 — Variables & Data Types
+- [ ] Day 03 — Operators & Calculations
+- [ ] Day 04 — User Input & Output
+- [ ] Day 05 — If / Else
 - [ ] Day 06 — Loops
-- [ ] Day 07 — Review and mini project
+- [ ] Day 07 — Mini Project & Review
 
 ## Environment
 
-Use Python 3 and Visual Studio Code. Create a virtual environment for projects that need third-party packages.
+Use Python 3 and Visual Studio Code. Use the terminal to run programs and Git to track learning progress.
 
-## Notes
+## Repository guidelines
 
-This is a learning repository. Add lesson examples, your own challenge solutions, and project iterations as you progress.
+- Put lesson material in `lessons/`.
+- Put exercises and submitted solutions in `challenges/`.
+- Put practical applications in `mini-projects/`.
+- Put personal learning notes in `notes/`.
+- Keep the roadmap and completed lesson checklist up to date.
