@@ -51,7 +51,7 @@ python-learning/
 - [x] Environment setup — Python 3.14.10 and Git 2.50.1 verified; project .venv appears first in Python command lookup
 - [x] Day 01 — Python Introduction & First Program
 - [x] Day 02 — Variables & Data Types
-- [ ] Day 03 — Operators & Calculations
+- [x] Day 03 — Operators & Calculations
 - [ ] Day 04 — User Input & Output
 - [ ] Day 05 — If / Else
 - [ ] Day 06 — Loops
