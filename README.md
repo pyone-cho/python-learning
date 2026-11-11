@@ -48,7 +48,7 @@ python-learning/
 
 ## Progress
 
-- [x] Environment setup — Python 3.9.6 and Git 2.50.1 verified; hello.py ran successfully
+- [x] Environment setup — Python 3.14.10 and Git 2.50.1 verified; project .venv appears first in Python command lookup
 - [ ] Day 01 — Python Introduction & First Program
 - [ ] Day 02 — Variables & Data Types
 - [ ] Day 03 — Operators & Calculations
